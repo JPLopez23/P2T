@@ -1,0 +1,118 @@
+[GRAMMAR]
+NAME: English Grammar - Cooking and Animals
+[PRODUCTIONS]
+S -> NP VP
+VP -> VP PP | V NP | cooks | drinks | eats | cuts
+PP -> P NP
+NP -> Det N | he | she
+V -> cooks | drinks | eats | cuts
+P -> in | with
+N -> cat | dog | beer | cake | juice | meat | soup | fork | knife | oven | spoon
+Det -> a | the
+[EXAMPLES_CORRECT]
+she eats a cake
+the cat drinks the beer
+he cooks the meat with a fork
+she cuts a cake with a knife
+[EXAMPLES_SYNTACTIC]
+the fork eats a cat
+he drinks the oven
+the knife cooks the dog
+[EXAMPLES_INCORRECT]
+she quickly eats cake
+cats drink beer
+the dog
+eats
+
+[GRAMMAR]
+NAME: Simple Arithmetic Expressions
+[PRODUCTIONS]
+S -> E
+E -> E Op E | Num | LPar E RPar
+Op -> plus | minus | times | div
+Num -> zero | one | two | three | four | five
+LPar -> lparen
+RPar -> rparen
+[EXAMPLES_CORRECT]
+one plus two
+three times four
+lparen one plus two rparen times three
+[EXAMPLES_SYNTACTIC]
+[EXAMPLES_INCORRECT]
+one two
+plus three
+one plus
+
+[GRAMMAR]
+NAME: Spanish Grammar - Simple Sentences
+[PRODUCTIONS]
+S -> SN SV
+SV -> V SN | V SN SP
+SP -> Prep SN
+SN -> Det N | PN
+PN -> juan | maria | pedro | ana
+V -> come | bebe | cocina | corta
+Prep -> en | con | de
+N -> gato | perro | cerveza | pastel | jugo | carne | sopa | tenedor | cuchillo | horno | cuchara
+Det -> el | la | un | una
+[EXAMPLES_CORRECT]
+juan come un pastel
+maria bebe la cerveza
+pedro cocina la carne con un tenedor
+[EXAMPLES_SYNTACTIC]
+el tenedor come un gato
+maria bebe el horno
+[EXAMPLES_INCORRECT]
+come pastel
+gatos beben cerveza
+juan rapidamente come
+
+[GRAMMAR]
+NAME: English Grammar - Extended Actions
+[PRODUCTIONS]
+S -> NP VP
+VP -> V NP | V NP PP | V Adv | runs | walks | sleeps
+PP -> P NP
+NP -> Det N | Det Adj N | PN
+PN -> john | mary | alice | bob
+V -> sees | likes | helps | teaches | runs | walks | sleeps
+P -> in | on | at | with | to
+N -> book | house | car | teacher | student | park | school
+Det -> a | the | this | that
+Adj -> big | small | red | blue | old | new
+Adv -> quickly | slowly | happily
+[EXAMPLES_CORRECT]
+john sees a book
+mary likes the big house
+alice helps the teacher in the school
+bob walks quickly
+[EXAMPLES_SYNTACTIC]
+the book sees john
+a car teaches the student
+[EXAMPLES_INCORRECT]
+john very likes book
+teaches student
+the the house
+
+[GRAMMAR]
+NAME: Simple Programming Language
+[PRODUCTIONS]
+S -> Stmt
+Stmt -> Var Assign Expr | Print Expr
+Assign -> equals
+Print -> print
+Expr -> Var | Num | Expr Op Expr
+Var -> x | y | z | a | b
+Num -> zero | one | two | three | four | five
+Op -> plus | minus | times
+[EXAMPLES_CORRECT]
+x equals one
+print x
+y equals two plus three
+print a times b
+[EXAMPLES_SYNTACTIC]
+[EXAMPLES_INCORRECT]
+x equals
+print
+equals one
+x y z
