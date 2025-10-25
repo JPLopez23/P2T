@@ -5,7 +5,7 @@ Este proyecto implementa un analizador sintáctico parser basado en el algoritmo
 
 ## Instalación
 
-1. Clona el repositorio: 
+1. Clona el repositorio: https://github.com/JPLopez23/P2T.git
 2. corre el archivo P2.py
 3. Prueba el programa
 
